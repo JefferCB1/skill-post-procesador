@@ -1,25 +1,11 @@
 # Skill: Excalidraw Optimizer
 
-Toma un archivo .excalidraw recién generado y lo optimiza para QC:
+Optimiza archivos .excalidraw automáticamente.
 
-1. **Grid Alignment**: Redondea coordenadas x/y de todos los elementos a múltiplos de 50px
-2. **Auto-Binding**: Conecta automáticamente flechas a figuras cercanas (rectangle, diamond, ellipse, icon, text)
-3. **Limpieza**: Elimina elementos tipo freedraw que inflan el archivo
-
-## Uso con npx
+## Uso
 
 ```bash
-npx skill-post-procesador <archivo.excalidraw> [archivo-salida.excalidraw]
-
-# Ejemplos
 npx skill-post-procesador diagrama.excalidraw
-npx skill-post-procesador input.excalidraw -o output.excalidraw
-npx skill-post-procesador input.excalidraw output.excalidraw
 ```
 
-## Uso como módulo
-
-```javascript
-const { optimizeExcalidraw } = require('skill-post-procesador');
-optimizeExcalidraw('entrada.excalidraw', 'salida.excalidraw');
-```
+Crea `diagrama.optimized.excalidraw` con grid alignment, auto-binding de flechas y limpieza de trazos.
