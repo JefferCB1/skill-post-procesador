@@ -1,6 +1,17 @@
-# skill-excalidraw-linker
+# skill-post-procesador
 
 Skill de control de calidad para archivos Excalidraw. Optimiza diagramas automáticamente mediante grid alignment, auto-binding de flechas y limpieza de trazos inútiles.
+
+## Instalación y Uso (npx)
+
+```bash
+# Optimizar archivo
+npx skill-post-procesador diagrama.excalidraw
+
+# Con archivo de salida
+npx skill-post-procesador input.excalidraw -o output.excalidraw
+npx skill-post-procesador input.excalidraw output.excalidraw
+```
 
 ## Características
 
@@ -8,37 +19,12 @@ Skill de control de calidad para archivos Excalidraw. Optimiza diagramas automá
 - **Auto-Binding**: Conecta automáticamente flechas a figuras cercanas
 - **Limpieza**: Elimina trazos libre (freedraw) que inflan el archivo
 
-## Instalación
-
-```bash
-npm install -g skill-excalidraw-linker
-```
-
-## Uso como CLI
-
-```bash
-# Optimizar archivo
-excalidraw-optimizer diagrama.excalidraw
-
-# Especificar archivo de salida
-excalidraw-optimizer input.excalidraw -o output.excalidraw
-
-# Versión corta
-excalidraw-optimizer input.excalidraw output.excalidraw
-```
-
 ## Uso como módulo Node
 
 ```javascript
-const { optimizeExcalidraw } = require('skill-excalidraw-linker');
+const { optimizeExcalidraw } = require('skill-post-procesador');
 
 optimizeExcalidraw('input.excalidraw', 'output.excalidraw');
-```
-
-## Uso con npx (sin instalación)
-
-```bash
-npx skill-excalidraw-linker diagrama.excalidraw
 ```
 
 ## Funciones

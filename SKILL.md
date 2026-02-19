@@ -1,4 +1,4 @@
-# Skill: Excalidraw Linker
+# Skill: Excalidraw Optimizer
 
 Toma un archivo .excalidraw recién generado y lo optimiza para QC:
 
@@ -6,15 +6,20 @@ Toma un archivo .excalidraw recién generado y lo optimiza para QC:
 2. **Auto-Binding**: Conecta automáticamente flechas a figuras cercanas (rectangle, diamond, ellipse, icon, text)
 3. **Limpieza**: Elimina elementos tipo freedraw que inflan el archivo
 
-Usa el script `excalidraw-optimizer` para procesar el archivo:
+## Uso con npx
 
 ```bash
-npx skill-excalidraw-linker <archivo.excalidraw> [archivo-salida.excalidraw]
+npx skill-post-procesador <archivo.excalidraw> [archivo-salida.excalidraw]
+
+# Ejemplos
+npx skill-post-procesador diagrama.excalidraw
+npx skill-post-procesador input.excalidraw -o output.excalidraw
+npx skill-post-procesador input.excalidraw output.excalidraw
 ```
 
-O importar como módulo:
+## Uso como módulo
 
 ```javascript
-const { optimizeExcalidraw } = require('skill-excalidraw-linker');
+const { optimizeExcalidraw } = require('skill-post-procesador');
 optimizeExcalidraw('entrada.excalidraw', 'salida.excalidraw');
 ```
