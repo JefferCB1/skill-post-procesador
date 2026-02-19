@@ -1,10 +1,10 @@
 {
-  "name": "skill-excalidraw-linker",
+  "name": "skill-post-procesador",
   "version": "1.0.0",
   "description": "Optimiza archivos Excalidraw: grid alignment, auto-binding de flechas, y limpieza de trazos",
   "main": "index.js",
   "bin": {
-    "excalidraw-optimizer": "./index.js"
+    "skill-post-procesador": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
