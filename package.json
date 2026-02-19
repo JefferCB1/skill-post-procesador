@@ -1,0 +1,28 @@
+{
+  "name": "skill-excalidraw-linker",
+  "version": "1.0.0",
+  "description": "Optimiza archivos Excalidraw: grid alignment, auto-binding de flechas, y limpieza de trazos",
+  "main": "index.js",
+  "bin": {
+    "excalidraw-optimizer": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "excalidraw",
+    "diagram",
+    "optimizer",
+    "grid",
+    "binding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
